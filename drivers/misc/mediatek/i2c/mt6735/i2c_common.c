@@ -8,7 +8,7 @@
 #include <linux/err.h>
 /* #include <mach/mt_pm_ldo.h> */
 #include <asm/memory.h>
-#include <mt_i2c.h>
+#include "mt_i2c.h"
 
 static char data_buffer[256 * 4];
 
@@ -438,7 +438,7 @@ static DEVICE_ATTR(ut, 0660, show_config, set_config);
 static int i2c_common_probe(struct platform_device *pdev)
 {
 	int ret = 0;
-	/* your code here£¬your should save client in your own way */
+	/* your code here\A3\ACyour should save client in your own way */
 	I2CLOG("i2c_common device probe\n");
 	ret = device_create_file(&pdev->dev, &dev_attr_ut);
 	return ret;
