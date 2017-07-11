@@ -17,5 +17,5 @@ cd ..
 clear
 echo Starting Compiling Kernel....
 make ARCH=arm64 CROSS_COMPILE=$CROSS_COMPILE gionee6753_65u_m0_defconfig
-make ARCH=arm64 CROSS_COMPILE=$CROSS_COMPILE -j6
+make ARCH=arm64 CROSS_COMPILE=$CROSS_COMPILE -j2 
 
