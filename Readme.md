@@ -5,5 +5,4 @@ Building the Kernel
 ==================
 
 <u><b>$ sudo -s</b></u>
-
 <u><b>$ . build.sh</b></u>
