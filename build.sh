@@ -12,7 +12,6 @@ make clean && make mrproper
 echo Fixing incomming build errors
 cd tools
 mkdir tools
-chmod --recursive 777 *
 cd ..
 clear
 echo Starting Compiling Kernel....
