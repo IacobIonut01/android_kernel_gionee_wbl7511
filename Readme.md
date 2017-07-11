@@ -1,8 +1,16 @@
-G I O N E E  S+
-Kernel 3.18.x
+Download NDK and extract it and rename it to ndk
 
-Building the Kernel
-==================
+go to kernel root source
 
-<u><b>$ sudo -s</b></u>
-<u><b>$ . build.sh</b></u>
+open terminal and type
+
+export CROSS_COMPILE=/home/hardik/Documents/ndk/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-
+
+
+make clean && make mrproper
+
+export ARCH=arm64
+
+make gionee6753_65u_m0_defconfig
+
+make ARCH=arm64
