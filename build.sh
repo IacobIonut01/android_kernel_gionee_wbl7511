@@ -1,6 +1,6 @@
-END_COLOR='\033[1;34m'
 clear
 echo Creating Environment for Compiling Kernel...
+chmod --recursive 777 *
 export CROSS_COMPILE=toolchains/bin/aarch64-linux-gnu-
 sudo apt-get install libncurses5-dev
 sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 libgl1-mesa-dev g++-multilib tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
