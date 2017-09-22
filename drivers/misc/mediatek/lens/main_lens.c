@@ -85,6 +85,9 @@ static stAF_DrvList g_stAF_DrvList[MAX_NUM_OF_LENS] = {
 	#ifdef CONFIG_MTK_LENS_AD5820AF_SUPPORT
 	{1, AFDRV_AD5820AF, AD5820AF_SetI2Cclient, AD5820AF_Ioctl, AD5820AF_Release},
 	#endif
+	#ifdef CONFIG_MTK_LENS_DW9800AF_SUPPORT
+	{1, AFDRV_DW9800AF, DW9800AF_SetI2Cclient, DW9800AF_Ioctl, DW9800AF_Release},
+    #endif
 };
 
 static stAF_DrvList *g_pstAF_CurDrv;
